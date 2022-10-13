@@ -1,0 +1,202 @@
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  --font-heading: 'DM Serif Display', serif;
+  --font-body: 'Karla', sans-serif;
+
+  --padding-container: 80px 0;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: var(--font-body);
+}
+
+.hero {
+  background: var(--dark-violet);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+.nav {
+  background: #fff;
+  --padding-container: 0;
+}
+
+.nav__container {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links {
+  display: none;
+}
+
+.nav__icon, .nav__img {
+  display: block;
+}
+
+.hero__main {
+  --padding-container: 0;
+  width: 100%;
+}
+
+.hero__main::before {
+  content: "";
+  display: block;
+  height: 350px;
+  background-image: url("../img/image-intro-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__text {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  letter-spacing: 3px;
+}
+
+.hero__paragraph {
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.enlace {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid;
+  padding: .8em 20px;
+  text-transform: uppercase;
+}
+
+.different {
+  text-align: center;
+}
+
+.title--different {
+  position: relative;
+  padding-top: 10px;
+}
+
+.title--different::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 30%;
+  height: 2px;
+  background: var(--dark-grayish-violet);
+}
+
+.different__items {
+  margin-top: 3.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.different__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+.different__title {
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  letter-spacing: 2px;
+}
+
+.different__paragraph {
+  color: var(--dark-grayish-violet);
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+
+.find {
+  --padding-container: 50px 40px;
+}
+
+.find__conatiner {
+  background: var(--dark-violet);
+  color: #fff;
+  text-align: center;
+}
+
+
+.footer {
+  background: var(--very-light-gray);
+}
+
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding-bottom: 2.5em;
+  margin-bottom: 2.5em;
+  border-bottom: 1px solid var(--dark-grayish-violet);
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.footer__navegation {
+  display: flex;
+  gap: 2.5em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--dark-violet);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__link--first {
+  color: var(--dark-grayish-violet);
+  margin-bottom: 1em;
+  gap: 3.5em;
+}
